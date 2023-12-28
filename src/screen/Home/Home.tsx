@@ -10,8 +10,33 @@ import React, { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 
-interface RenderCardInterface {
-  item: any;
+const data = {
+  bio: "No green thumb required to keep our artificial watermelon peperomia plant looking lively and lush anywhere you place it.",
+  category: "Air Purifier",
+  fertilizer: "250gm",
+  id: 5,
+  image: "https://i.postimg.cc/28Cz3W4L/Mask-Group.png",
+  light: "30-40%",
+  name: "Cactus",
+  price: 100,
+  size: '4" h',
+  water: "250ml",
+};
+interface itemObject {
+  bio: string;
+  category: string;
+  fertilizer: string;
+  id: number;
+  image: string;
+  light: string;
+  name: string;
+  price: string;
+  size: string;
+  water: string;
+}
+
+export interface RenderCardInterface {
+  item: itemObject;
   onPress?: () => void;
 }
 
@@ -55,7 +80,7 @@ const Home = () => {
   const [data, setData] = useState(null);
   const navigation: any = useNavigation();
 
-  const gotoDetailScreeen = (item: any) => {
+  const gotoDetailScreeen = (item: RenderCardInterface) => {
     navigation.navigate("Details", { item });
   };
 

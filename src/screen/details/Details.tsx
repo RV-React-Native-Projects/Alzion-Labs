@@ -11,7 +11,7 @@ const Details = (props: any) => {
   return (
     <SafeAreaView>
       <ScrollView>
-        {/* <DetailsBg /> */}
+        <DetailsBg />
         {/* <Text>Details Screen</Text> */}
         <View
           style={{
