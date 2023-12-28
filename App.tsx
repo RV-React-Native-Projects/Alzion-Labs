@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import { store } from "@src/redux/store";
 // ======= Screens =======
 import Home from "@screen/Home/Home";
+import Details from "@screen/details/Details";
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,7 @@ const AppNavigation = () => {
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
   );
