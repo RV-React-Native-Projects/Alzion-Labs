@@ -5,7 +5,9 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const Home = () => {
   return (
     <SafeAreaView>
-      <Text style={{ color: "#F00" }}>Home</Text>
+      <View>
+        <Text style={{ color: "#F00", fontSize: 30 }}>Home</Text>
+      </View>
     </SafeAreaView>
   );
 };

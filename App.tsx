@@ -4,10 +4,10 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Provider as PaperProvider } from "react-native-paper";
 import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
-import { store } from "./src/redux/store";
 
+import { store } from "@src/redux/store";
 // ======= Screens =======
-import Home from "./src/screen/Home/Home";
+import Home from "@screen/Home/Home";
 
 const Stack = createStackNavigator();
 

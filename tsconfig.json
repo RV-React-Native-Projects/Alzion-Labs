@@ -1,6 +1,30 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@appConfig": ["./app.json"],
+      "@config": ["./Config.json"],
+      "@assets/*": ["./src/assets/*"],
+      "@cards/*": ["./src/cards/*"],
+      "@common/*": ["./src/common/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@components/*": ["./src/components/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@contexts/*": ["./src/contexts/*"],
+      "@helpers/*": ["./src/helpers/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@navigation/*": ["./src/navigation/*"],
+      "@screen_components/*": ["./src/screen_components/*"],
+      "@screen/*": ["./src/screen/*"],
+      "@skeltons/*": ["./src/skeltons/*"],
+      "@services/*": ["./src/services/*"],
+      "@features/*": ["./src/services/features/*"],
+      "@global/*": ["./src/services/global/*"],
+      "@redux/*": ["./src/redux/*"],
+      "@reducer/*": ["src/redux/reducer/*"]
+    }
   }
 }
