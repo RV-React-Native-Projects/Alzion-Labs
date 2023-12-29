@@ -1,17 +1,17 @@
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import DetailsBg from "@src/assets/svgs/DetailsBG";
+import DetailsBg from "@assets/svgs/DetailsBG";
 
 const Details = (props: any) => {
   const { item } = props.route.params;
 
-  console.log("AT Details", item);
+  // console.log("AT Details", item);
 
   return (
     <SafeAreaView>
       <ScrollView>
-        <DetailsBg />
+        {/* <DetailsBg /> */}
         {/* <Text>Details Screen</Text> */}
         <View
           style={{

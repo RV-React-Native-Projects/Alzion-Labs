@@ -10,18 +10,6 @@ import React, { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 
-const data = {
-  bio: "No green thumb required to keep our artificial watermelon peperomia plant looking lively and lush anywhere you place it.",
-  category: "Air Purifier",
-  fertilizer: "250gm",
-  id: 5,
-  image: "https://i.postimg.cc/28Cz3W4L/Mask-Group.png",
-  light: "30-40%",
-  name: "Cactus",
-  price: 100,
-  size: '4" h',
-  water: "250ml",
-};
 interface itemObject {
   bio: string;
   category: string;
